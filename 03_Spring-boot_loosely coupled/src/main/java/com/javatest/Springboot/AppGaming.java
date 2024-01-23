@@ -12,6 +12,9 @@ public class AppGaming {
 		var supercontrastGame = new supercontrastGame();
 		var GameRunner = new GameRunner(MarioGame);
 		
+//		Object Created + Wiring of dependencies
+//		Game is a dependency of GameRunner
+		
 		GameRunner.run();
 
 	}
