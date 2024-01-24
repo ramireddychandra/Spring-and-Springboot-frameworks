@@ -11,9 +11,10 @@ import com.javatest.Springboot.game.PacmanGame;
 
 
 @Configuration
-@ComponentScan("com.highradiustest.Springboot.game")
+@ComponentScan("com.javatest.Springboot.game")
 public class ApplicationLauncher {
 	
+//	Game Bean is created by bean for that added @compoenet at class level and added Componentscan at IOC level...
 	
 //	@Bean
 //	public GameRunner gameRunner(Gameconsole game)
