@@ -1,8 +1,5 @@
 package com.javatest.Springboot.game;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class GameRunner {
 	
 	private Gameconsole game;

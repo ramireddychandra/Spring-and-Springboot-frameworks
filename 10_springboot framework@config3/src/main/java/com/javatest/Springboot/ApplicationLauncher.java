@@ -14,6 +14,8 @@ import com.javatest.Springboot.game.Gameconsole;
 import com.javatest.Springboot.game.PacmanGame;
 
 // field injection
+//dependency injection
+//	Setter based, Constructor, field
 
 @Component
 class YourBusinessClass{

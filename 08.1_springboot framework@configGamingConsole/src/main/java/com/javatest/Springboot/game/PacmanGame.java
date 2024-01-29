@@ -1,11 +1,5 @@
 package com.javatest.Springboot.game;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-
-@Component
-@Primary
-
 public class PacmanGame implements Gameconsole{
 	
 	public void up()
