@@ -1,5 +1,7 @@
 package com.javatest.Springboot;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +28,10 @@ class classB
 		this.classA = classA;
 		System.out.println("Constructor of classB");
 	}
+	
+	public void method(String Input) {
+		System.out.println(Input);
+	}
 }
 
 @Configuration
@@ -37,7 +43,8 @@ public class LazyIntializationLauncherApplication
 		try(var context = new AnnotationConfigApplicationContext(LazyIntializationLauncherApplication.class))
 		{
 			System.out.println("Intialization of Main Class");
-			context.getBean(classB.class);
+			context.getBean(classB.class).method("");
+			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 		}
 		
