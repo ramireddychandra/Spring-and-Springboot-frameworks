@@ -15,3 +15,12 @@ Scopes appllicable only for web-aware Spring ApplicationContext
 	Session : one Object instance per user HTTP request
 Application : One Object instance per web application runtime
 web socket: One Object instance per wensocket instance.
+
+Java SingleTon vs Spring Singleton
+
+-->Java SingleTon :: Single Object Instance per JVM
+-->Spring Singleton :: One Object instance per Spring IOC Container
+
+Spring Singleton and Java Singleton might mean the same if you are only running only one spring IOC per java 
+However if we are multiple spring IOC containers in JVM then both are different.
+
