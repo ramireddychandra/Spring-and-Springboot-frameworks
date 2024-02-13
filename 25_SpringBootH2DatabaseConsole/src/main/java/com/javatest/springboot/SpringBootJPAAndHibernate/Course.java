@@ -1,4 +1,4 @@
-package com.javatest.springboot.SpringBootJPAAndHibernate.course.jdbc;
+package com.javatest.springboot.SpringBootJPAAndHibernate;
 
 public class Course {
 	
