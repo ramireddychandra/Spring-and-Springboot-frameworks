@@ -18,7 +18,7 @@ public class CourseJPACommandLine implements CommandLineRunner{
 		Repostory.insert(new Course(2,"MYSQ2L","In28Minutes"));
 		Repostory.insert(new Course(3,"MYSQL3","In28Minutes"));
 //		
-		Repostory.deleteId(2);
+		Repostory.deleteId(4);
 		System.out.println("new" + Repostory.findById(3));
 
 	}
