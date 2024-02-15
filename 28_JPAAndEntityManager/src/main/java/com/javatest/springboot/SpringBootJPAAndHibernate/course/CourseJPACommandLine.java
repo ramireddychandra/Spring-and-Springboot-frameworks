@@ -1,10 +1,12 @@
-package com.javatest.springboot.SpringBootJPAAndHibernate.course.jpa;
+package com.javatest.springboot.SpringBootJPAAndHibernate.course;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
-import com.javatest.springboot.SpringBootJPAAndHibernate.Course;
+import com.javatest.springboot.SpringBootJPAAndHibernate.course.jpa.CourseJPARepostory;
 
+@Component
 public class CourseJPACommandLine implements CommandLineRunner{
 	
 	@Autowired
@@ -16,8 +18,8 @@ public class CourseJPACommandLine implements CommandLineRunner{
 		Repostory.insert(new Course(2,"MYSQ2L","In28Minutes"));
 		Repostory.insert(new Course(3,"MYSQL3","In28Minutes"));
 //		
-//		Repostory.deleteId(2);
-//		System.out.println("new" + Repostory.findById(3));
+		Repostory.deleteId(2);
+		System.out.println("new" + Repostory.findById(3));
 
 	}
 

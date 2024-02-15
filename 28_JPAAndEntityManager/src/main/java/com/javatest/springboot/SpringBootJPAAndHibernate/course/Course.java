@@ -1,4 +1,4 @@
-package com.javatest.springboot.SpringBootJPAAndHibernate;
+package com.javatest.springboot.SpringBootJPAAndHibernate.course;
 
 
 import jakarta.persistence.Entity;
