@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Primary;
 record Person(String name,int age,Address address) {};
 record Address(String FirstLine, int Pincode) {};
 
+//This is the spring Configuration class
+
 @Configuration
 public class AppConfiguration {
 	
